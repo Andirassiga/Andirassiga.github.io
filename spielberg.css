@@ -1,0 +1,513 @@
+@charset "UTF-8";
+
+body{margin: 0; padding: 0;
+	background-image:url( "img/stevenspielberg1.jpg");
+	 background-repeat:repeat;
+background-position: center;
+	background-size: 45%;background-attachment: fixed;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+font-size: 30px}
+
+header{ text-align: center;
+	background-color: #000000;
+	color: khaki;
+	height: 150px;
+	margin-top: -55px;
+	margin-left: -15px;
+	margin-right: -15px;
+	padding-top: 10px;
+	margin-bottom: 50px;
+}
+Header:hover{color:aqua;
+}
+h1{
+	color: #E59F2D}
+h1:hover{
+	color: aqua;
+	opacity: 0.8;
+}
+.menu{
+	width: 100%;
+	height: 40px;
+	background-color:#000000; 
+margin-top: 20px;
+display: flex;
+justify-content: space-between;
+align-content: center}
+.menu1{
+	font-size: 30px;
+	color: #F5F1F1;
+margin-left: 10px;
+margin-right: 10px;}
+#main{ 
+width: 80%;
+	border: solid;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px;
+	background-color:rgba(255,255,255,0.7); 
+}
+.contendorimg{width: 100%}
+.contendorimg img {width: 100%;border-radius: 10%;
+transition: all;
+transition:ease-in-out;
+transition-duration: 2s}
+.contendorimg img:hover{transform:rotate(360deg)}
+footer{color: white;
+text-align: center;
+background-color: #E59F2D;
+	height: auto;
+	width: 100%;
+margin-left: auto; margin-right: auto;
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+margin-top: 20px;
+opacity: 0.8;}
+@keyframes subtitulos1{
+	0%{transform:translateX(1000px);}
+	50%{transform: translate(0px)}
+	100%{transform:rotateX(360)}
+}
+h3{animation-name: subtitulos1;
+animation-duration: 3s;
+animation-timing-function: ease-in-out;
+	font-family:graduate;
+	text-decoration: underline;
+}
+#quien-es{
+	font-size: 50px;
+}
+@keyframes texto1{
+	0%{transform:translateX(-1000px);}
+	50%{transform: translateX(0PX)}
+}
+.primercontenido-flex{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.contenedor-informacion{
+	width: 40%;
+	margin-left: 10px;
+	text-align: justify;
+}
+
+.contenedor-imagen1{
+	width: 50%;
+height: 450px;
+	margin-right: 40px;
+	background-image:url("imgss/spielberg21.jpg");
+	background-size: cover;
+	border-radius: 20px;
+	animation-name: imagenn1;
+animation-duration: 5s;
+animation-timing-function: ease-in-out;
+}
+@keyframes imagenn1{
+	0%{transform:translateX(-1000px);}
+	50%{transform: translateX(0PX)}}
+p {animation-name: texto1;
+	animation-delay: 0s;
+animation-duration:5s;
+animation-timing-function:ease;
+font-family: graduate;}
+.fondocontenedor img{
+	width: 100%;
+	height:auto;
+}
+.tiburon1{
+	background:url("shark6.png");
+	height: 600px;
+	width: 300px;
+}
+.main-filmografia{
+	width: 80%;
+	border: solid;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px;
+	background-color:rgba(255,255,255,0.5); 
+	height: 2950px;
+}
+.peliculas-flex{
+	width: 100%;
+	height: 1200PX;
+	display: flex;
+	justify-content: space-between;
+align-content:stretch;
+	flex-wrap: wrap;	
+}
+.peliculas-box{
+	width: 30%;
+	height: 520px;
+	background-color:#FFFFFF;
+	margin-top: 30px;
+	border-radius: 30px;
+	position: relative;}
+.peliculas-box img{
+	width: 100%;
+	height: 85%;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+
+}
+H6{
+	position: absolute;
+	top:78%;
+	left: 0%;
+	margin-left: 10px;
+	margin-right: 9px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: #524F4F;
+	text-align: center;
+}
+.formulario{
+	background-color:rgba(0,0,0,0.8);
+	width: 350px;
+	height: 500px;
+	border-radius: 30px;
+	position: relative;
+	margin-right: 70px;
+	margin-top: 30px;
+}
+.texto-contacto{
+	width: 45%;
+	height: 220px;
+	background-color: rgba(229, 159, 45,0.8);
+	font-size: 30px;
+	text-align: justify;
+	font-family:serif;
+border-radius: 15px;
+margin-left: 50px;
+	margin-top: 160px;
+padding: 20px;}
+.titulo-formulario{
+	color: #FFFFFF;
+	text-align: center;
+}
+.nombre {
+    position: absolute;
+    top: 80px;
+    left: 13%;
+    height: 65px;
+    width: 250px;
+    border-radius: 10px;
+    border:medium solid;
+font-size:large}
+.botonenviar {
+    position: absolute;
+    top: 420px;
+    background-color:rgba(212, 21, 6,0.6);
+    left: 28%;
+    width: 140px;
+    height: 60px;
+    font-size: x-large;
+    font-weight: bolder;
+	border-radius: 15px;
+}
+.botonenviar:hover{
+	opacity: 0.6;
+}
+.email {
+    position: absolute;
+    top: 180px;
+    left: 13%;
+    height: 65px;
+    min-width: 250px;
+	border-radius: 10px;
+    border: medium solid;
+	font-size: large;}
+.mensaje {
+	vertical-align:top;
+    position: absolute;
+    top: 280px;
+    left: 13%;
+    height: 100px;
+    width: 250px;
+	border-radius: 10px;
+	    border: medium solid;
+	    font-size: large;
+}
+.contenedor-contacto{
+	width: 83%;
+	height: 580px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("img/teatro.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	margin-top: -38px;
+}
+.contenedor-contacto1{
+	width: 100%;
+	height: 580px;
+	background-color:rgba(255,255,255,0.2); 
+position:absolute;
+	display: flex;
+	justify-content: space-between;
+align-content:stretch;
+	flex-wrap: wrap;
+}
+#contacto{
+	text-decoration: underline;
+}
+#bio{
+	text-decoration: underline;
+}
+#filmografia{text-decoration:underline;}
+#galeriaimg{text-decoration:underline;}
+#footer-cv{
+	width: 83%;
+	background-color: black;
+}
+.respuestaa {
+    background-color: #349516;
+}
+.respuestaa {
+    background-color: #D53636;
+    text-align: center;
+    height: 120px;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    font-size: 50px;
+    position: relative;
+	top: 80px;}
+	.respuesta2 {
+    height: 40px;
+    position: relative;
+    top: 30px;
+    text-align: center;
+    color: #000000;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    font-size: 40px;
+}
+.volver {
+    width: 100%;
+    position: relative;
+    top: 100px;
+    text-align: center;
+	background-color:black;
+	text-decoration: underline;
+	font-size: 40px;
+}
+@media screen and (min-width: 960px) and (max-width: 1200px){
+	.contenedor-contacto1{
+			position: relative;
+		margin-top: 1px;
+		}
+	
+		.texto-contacto{
+			position: absolute;
+			margin-top: 20px;
+			margin-right: 30px;
+			width: 80%;
+			font-size: 25px;
+			height: 100px;
+		}
+		.formulario{
+			position: absolute;
+			margin-top: 200px;
+			margin-left: 30%;
+			height:350px;
+		}
+		.titulo-formulario{
+			font-size: 20px;
+		}
+		.nombre{
+			height: 40px;
+			top:60px;
+		}
+		.email{
+			height: 40px;
+			top:120px;
+		}
+		.mensaje{height: 40px;
+		top:180px;}
+		.botonenviar{
+			top: 250px;
+		}
+}
+@media screen and (min-width: 800px) and (max-width: 959px){
+
+	.menu{
+		height: 70px;
+}
+	.peliculas-box{
+		height: 400px;
+	}
+	h6{
+		font-size: 15px;
+	}
+	.main-filmografia{
+		height: 2350px;
+	}
+		.slider-container{
+			margin-top: 120px;
+		}
+	.contenedor-contacto1{
+			position: relative;
+		margin-top: 50px;
+		}
+	
+		.texto-contacto{
+			position: absolute;
+			margin-top: 20px;
+			margin-right: 30px;
+			width: 80%;
+			font-size: 20px;
+			height: 100px;
+		}
+		.formulario{
+			position: absolute;
+			margin-top: 200px;
+			margin-left: 30%;
+			height:350px;
+		}
+		.titulo-formulario{
+			font-size: 20px;
+		}
+		.nombre{
+			height: 40px;
+			top:60px;
+		}
+		.email{
+			height: 40px;
+			top:120px;
+		}
+		.mensaje{height: 40px;
+		top:180px;}
+		.botonenviar{
+			top: 250px;
+		}
+}
+@media screen and (min-width: 600px) and (max-width: 799px){
+		.menu{
+		display: list-item;
+		text-align: center;
+		width: 100%;
+		height: 150px;
+}
+	#quien-es{
+			margin-top: 220px;
+			text-align: center;
+		}
+	p{
+	text-align: justify;
+		width: 100%;
+	}
+.peliculas-box{width: 80%;
+		margin-top: 250px;
+		margin-bottom: -200px;
+		object-position: center;
+}
+	.main-filmografia{
+			height: 9000px;
+		}
+		.slider-container{
+			margin-top: 230px;
+		}
+	.contenedor-contacto1{
+			position: relative;
+		margin-top: 170px;
+		}
+	
+		.texto-contacto{
+			position: absolute;
+			margin-top: 20px;
+			margin-right: 30px;
+			width: 80%;
+			font-size: 20px;
+			height: 100px;
+		}
+		.formulario{
+			position: absolute;
+			margin-top: 200px;
+			margin-left: 120px;
+			height:350px;
+		}
+		.titulo-formulario{
+			font-size: 20px;
+		}
+		.nombre{
+			height: 40px;
+			top:60px;
+		}
+		.email{
+			height: 40px;
+			top:120px;
+		}
+		.mensaje{height: 40px;
+		top:180px;}
+		.botonenviar{
+			top: 250px;
+		}
+}
+	@media screen and (min-width: 0px) and (max-width: 599px){
+		.menu{
+		display: list-item;
+		text-align: center;
+		width: 100%;
+		height: 150px;
+		}
+		#quien-es{
+			margin-top: 220px;
+			text-align: center;
+		}
+
+p{
+	text-align:justify;
+	width: 100%;
+}
+.contenedor-imagen1{width: 100%;
+height: 300px;
+	margin-top: 50px;
+}
+		.peliculas-flex{display: inline;
+			margin-top: 300px;
+	}
+		.peliculas-box{width: 100%;
+		margin-top: 250px;
+		margin-bottom: -200px;
+		object-position: center;
+		}
+		.main-filmografia{
+			height: 8900px;
+		}
+		.slider-container{
+			margin-top: 230px;
+		}
+		.contenedor-contacto1{
+			position: relative;
+		margin-top: 170px;
+		}
+	
+		.texto-contacto{
+			position: absolute;
+			margin-top: 20px;
+			margin-right: 30px;
+			width: 80%;
+			font-size: 17px;
+			height: 100px;
+		}
+		.formulario{
+			position: absolute;
+			margin-top: 200px;
+			margin-left:50px;
+			height:350px;
+		}
+		.titulo-formulario{
+			font-size: 20px;
+		}
+		.nombre{
+			height: 40px;
+			top:60px;
+		}
+		.email{
+			height: 40px;
+			top:120px;
+		}
+		.mensaje{height: 40px;
+		top:180px;}
+		.botonenviar{
+			top: 250px;
+		}
+}

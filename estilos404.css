@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/* CSS Document */
+body{margin: 0; padding: 0;
+	background-image:url("img/fondomarr5.jpg");
+}
+.diver{
+	background-image:url("img/diversteps10.png");
+	width: 28%;
+	height: 300px;
+	animation-name: moverdiver1,moverdiver2;
+	animation-duration: 1s,8s;
+	animation-iteration-count: infinite;
+	animation-timing-function:steps(2), linear;
+	position: relative;
+	float:right
+}
+@keyframes moverdiver1{
+	0%{background-position:0}
+	100%{background-position: 711px;}
+}
+@keyframes moverdiver2{
+	0%{transform: translate(-1200px);}
+	100%{transform: translate(550px)}
+}
+.tiburon{
+background-image:url("img/sharkk.png");
+	animation-name: movertiburon1;
+	width: 800px;
+	height: 300px;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+	animation-timing-function:linear;
+	background-position:center;
+}
+
+@keyframes movertiburon1{
+	0%{transform: translate(-3200px);}
+	100%{transform: translate(1200px);}
+}
+@keyframes moverpulpo1{
+	0%{background-position:0 }
+	100%{background-position: 100%;}
+}
+.ballena{
+	background-image:url("img/ballena.png");
+	background-position:center;
+	width: 1000px;
+	height: 475px;	
+	animation-name: moverballena;
+	animation-timing-function: linear;
+	animation-duration: 10s;
+	animation-iteration-count:infinite;
+	margin-top: -100px;
+}
+@keyframes moverballena{
+	0%{transform: translate(1500px);}
+	100%{transform: translate(-1000px)}
+}
+.safe{
+	background-image:url("img/tuvooxigeno.png");
+	height: 145px;
+	width: 687px;
+	margin-left: 23%;
+	animation-name: safe1;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function:steps(2);
+	background-position: center;
+	margin-top: -50px
+}
+@keyframes safe1{
+	0%{background-position:0px}
+	100%{background-position: 1300px;}
+}
+.safe:hover{opacity: 0.8;}

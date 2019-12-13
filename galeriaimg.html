@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GaleriaIMG</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="spielberg.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+   a {text-decoration:none}
+</style>
+	<style type="text/css">
+.slider-container { width: 100%; position: relative; }
+	.slider-container .mySlides, .slider-container img.mySlides { width: 100%;}
+	.slider-container .left, .slider-container .right {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding: 20px 10px;
+    background-color:#000000;
+    color: #FFF;
+    border: none;
+    font-size: 30px;
+		opacity: 0.6;
+}
+	.slider-container .right {
+    right: 0;
+    left: inherit;
+    background-color:#000000;
+		opacity: 0.6;
+}
+</style>
+</head>
+
+<body>
+	<div id="main" class="">
+	<header class="header1">
+		<a href="Index.html"><h1> STEVEN SPIELBERG</h1></a>
+		<div class="menu"> 
+			<a href= "Index.html"> <div class="menu1">Biografía</div>		</a>
+			<a href= "cinematografia.html"><div class="menu1">Filmografía</div></a>
+		<a href= "galeriaimg.html">	<div class="menu1" id="galeriaimg">Galeria de fotos</div></a>
+		<a href= "cv.html">	<div class="menu1">	CV</div></a>
+		<a href= "contacto.html">	<div class="menu1">Contacto</div></a>
+
+		</div>
+		</header>
+		
+	<div class="slider-container">
+  <img class="mySlides" src= "imgss/spielberg5.jpg" alt="">
+  <img class="mySlides" src= "imgss/spieleberg15.jpg" alt="">
+	 <img class="mySlides" src= "imgss/spielberg11.jpg" alt="">
+  <img src= "imgss/spieleberg17.jpg" class="mySlides" alt=""/>
+   <img src= "imgss/spieleberg13.jpg" class="mySlides" alt=""/>
+		 <img src="img/spielberg3.jpg" class="mySlides" alt=""/>
+		 <img src= "img/spieleberg16.jpg" class="mySlides" alt=""/>
+		 <img src="imgss/spielberg9.jpg" class="mySlides" alt=""/>
+		 <img src="imgss/spielbergdino.png" class="mySlides" alt=""/>
+		 <img src="imgss/stevenspielberg.jpg" class="mySlides" alt=""/>
+		 <img src="imgss/spielberg6.jpg" class="mySlides" alt=""/>
+   <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="right" onclick="plusDivs(1)">&#10095;</button>
+  
+</div>
+		<footer id="footer1">
+		<span class="copyright">
+		&copy;2019 - Todos los derechos reservados
+		</span>
+	</footer>
+		</div>
+	<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+	
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); // Cambia la imagen cada 2 segundos
+}
+</script>
+
+</body>
+</html>
